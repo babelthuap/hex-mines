@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hex Minesweeper</title>
+  <link rel="stylesheet" type="text/css" href="style.css"></head>
+<body>
+  <div id="controls">
+    <div id="inputs">
+      X: <input id="width" type="number" value="20" min="3" max="1000">
+      Y: <input id="height" type="number" value="16" min="3" max="1000">
+      density: <input id="density" type="number" value="25" min="1" max="90">%
+    </div>
+    <button id="restart">Restart</button>
+    <div id="counters">
+      Mines: <span id="numMines"></span>,
+      Flags: <span id="numFlags"></span>
+    </div>
+  </div>
+  <div id="board"></div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
