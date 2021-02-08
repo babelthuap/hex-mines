@@ -403,7 +403,7 @@ class Minesweeper {
           x, y, {color: GREY, text: tile.isFlagged ? 'F' : ''});
     } else {
       const label = tile.hasMine ?
-          '*' :
+          '💣' :
           (tile.adjacentMines === 0 ? '' : tile.adjacentMines);
       this.hexGrid_.drawCell(x, y, {
         color: WHITE,
